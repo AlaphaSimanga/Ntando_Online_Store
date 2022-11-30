@@ -9,8 +9,10 @@
 							<div class="footer">
 								<h3 class="footer-title">About Us</h3>
 								<ul class="footer-links">
-									<li><a href="#"><i class="fa fa-map-marker"></i>East London</a></li>
+									<li><a href="https://goo.gl/maps/3aJn4keYSBRaCwjaA"><i class="fa fa-map-marker"></i>East London</a></li>
 									<li><a href="#"><i class="fa fa-phone"></i>+27 81059 8306</a></li>
+                                    <li><a href="https://www.facebook.com/alapha.simanga"><i class="fa fa-facebook"></i>Facebook</a></li>
+									<li><a href="http://www.linkedin.com/in/alapha-simanga-1b6596165/"><i class="fa fa-linkedin"></i>LinkedIn</a></li>
 									<li><a href="#"><i class="fa fa-envelope-o"></i>simangaalapha@gmail.com</a></li>
 								</ul>
 							</div>
@@ -61,7 +63,7 @@
 		<script src="js/actions.js"></script>
 		<script src="js/sweetalert.min"></script>
 		<script src="js/jquery.payform.min.js" charset="utf-8"></script>
-    <script src="js/script.js"></script>
+        <script src="js/script.js"></script>
 		<script>var c = 0;
         function menu(){
           if(c % 2 == 0) {

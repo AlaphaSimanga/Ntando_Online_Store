@@ -138,7 +138,7 @@ include "header.php";
 								<a class="review-link" href="#review-form">10 Review(s) | Add your review</a>
 							</div>
 							<div>
-								<h3 class="product-price">$'.$row['product_price'].'<del class="product-old-price">R990.00</del></h3>
+								<h3 class="product-price">R'.$row['product_price'].'</h3>
 								<span class="product-available">In Stock</span>
 							</div>
 							<p>The perfect 100% cotton crew neck t-shirt ideal for everyday wear.
@@ -148,13 +148,24 @@ include "header.php";
 								<label>
 									Size
 									<select class="input-select">
-										<option value="0">X</option>
+										<option value="0">XS</option>
+										<option value="0">S</option>
+										<option value="0">M</option>
+										<option value="0">L</option>
+										<option value="0">XL</option>
 									</select>
 								</label>
 								<label>
 									Color
 									<select class="input-select">
 										<option value="0">Red</option>
+										<option value="1">Black</option>
+										<option value="2">White</option>
+										<option value="3">Red and white</option>
+										<option value="4">Navy</option>
+										<option value="0">Blue</option>
+										<option value="0">Orange</option>
+										<option value="0">Green</option>
 									</select>
 								</label>
 							</div>
@@ -163,7 +174,6 @@ include "header.php";
 								<div class="qty-label">
 									Qty
 									<div class="input-number">
-										
 										<span class="qty-up">+</span>
 										<span class="qty-down">-</span>
 									</div>
@@ -326,7 +336,7 @@ include "header.php";
 												<ul class="reviews">
 													<li>
 														<div class="review-heading">
-															<h5 class="name">John</h5>
+															<h5 class="name">Junior</h5>
 															<p class="date">27 DEC 2018, 8:0 PM</p>
 															<div class="review-rating">
 																<i class="fa fa-star"></i>
@@ -343,8 +353,8 @@ include "header.php";
 													</li>
 													<li>
 														<div class="review-heading">
-															<h5 class="name">John</h5>
-															<p class="date">27 DEC 2018, 8:0 PM</p>
+															<h5 class="name">Milani</h5>
+															<p class="date">28 OCT 2018, 8:0 PM</p>
 															<div class="review-rating">
 																<i class="fa fa-star"></i>
 																<i class="fa fa-star"></i>
@@ -360,8 +370,8 @@ include "header.php";
 													</li>
 													<li>
 														<div class="review-heading">
-															<h5 class="name">John</h5>
-															<p class="date">27 DEC 2018, 8:0 PM</p>
+															<h5 class="name">Lilly</h5>
+															<p class="date">27 SEP 2018, 8:0 PM</p>
 															<div class="review-rating">
 																<i class="fa fa-star"></i>
 																<i class="fa fa-star"></i>
@@ -466,16 +476,12 @@ include "header.php";
                                 <div class='col-md-3 col-xs-6'>
 								<a href='product.php?p=$pro_id'><div class='product'>
 									<div class='product-img'>
-										<img src='product_images/$pro_image' style='max-height: 170px;' alt=''>
-										<div class='product-label'>
-											<span class='sale'>-30%</span>
-											
-										</div>
+										<img src='product_images/$pro_image' style='max-height: 250px;' alt=''>
 									</div></a>
 									<div class='product-body'>
 										<p class='product-category'>$cat_name</p>
 										<h3 class='product-name header-cart-item-name'><a href='product.php?p=$pro_id'>$pro_title</a></h3>
-										<h4 class='product-price header-cart-item-info'>$pro_price<del class='product-old-price'>$990.00</del></h4>
+										<h4 class='product-price header-cart-item-info'>R$pro_price</h4>
 										<div class='product-rating'>
 											<i class='fa fa-star'></i>
 											<i class='fa fa-star'></i>

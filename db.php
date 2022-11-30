@@ -1,10 +1,5 @@
 <?php
 
-/*$servername = "localhost";
-$username = "root";
-$password = "";
-$db = "ecommerce";*/
-
 $servername = "localhost";
 $username = "store";
 $password = "store@2020.";

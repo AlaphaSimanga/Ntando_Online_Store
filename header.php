@@ -125,18 +125,6 @@ session_start();
 			<div id="top-header">
 				<div class="container">
 					
-					<!--<ul class="header-links pull-left">
-					
-                        <!--<li><a class="active" href="#">Home</a></li>
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">Women</a></li>
-                        <li><a href="#">Objects</a></li>
-                        <li><a href="#">Journal</a></li>-->
-                   
-						<!--<li><a href="#"><i class="fa fa-phone"></i> +91-9535688928</a></li>
-						<li><a href="#"><i class="fa fa-envelope-o"></i> puneethreddy951@gmail.com</a></li>
-						<li><a href="#"><i class="fa fa-map-marker"></i>Bangalore</a></li>
-					</ul>-->
 					<ul class="header-links pull-right">
 						
 						<li><?php
@@ -202,8 +190,9 @@ session_start();
 								<form>
 									<select class="input-select">
 										<option value="0">All Categories</option>
-										<option value="1">Men</option>
-										<option value="1">Women </option>
+										<option value="2">Men</option>
+										<option value="3">Women </option>
+										<option value="1">About Us </option>
 									</select>
 									<input class="input" id="search" type="text" placeholder="Search here">
 									<button type="submit" id="search_btn" class="search-btn">Search</button>
@@ -302,8 +291,28 @@ session_start();
 		</div>
 		
         <section id="hero">
-            
+            <!-- HOT DEAL SECTION     hot-deal-countdown   class="section mainn mainn-raised" -->
+		    <div id="hot-deal">
+			    <!-- container -->
+			    <div class="container">
+				    <!-- row -->
+				    <div class="row">
+					    <div class="col-md-12">
+						    <div class="hot-deal-countdown">
+							    <h2 class="text-uppercase">hot deal this week</h2>
+							    <p>New Collection In Store!!!</p>
+							    <a class="primary-btn cta-btn" href="store.php">Shop now</a>
+						    </div>
+					    </div>
+				    </div>
+				    <!-- /row -->
+			    </div>
+			    <!-- /container -->
+		    </div>
+		    <!-- /HOT DEAL SECTION -->
         </section>
+		
+
 
 	</body>
 </html>

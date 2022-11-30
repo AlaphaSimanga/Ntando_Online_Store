@@ -53,7 +53,7 @@ if (isset($_GET["st"])) {
 						<div class="navbar navbar-inverse navbar-fixed-top">
 							<div class="container-fluid">	
 								<div class="navbar-header">
-									<a href="#" class="navbar-brand">Khan Store</a>
+									<a href="#" class="navbar-brand">Ntando Store</a>
 								</div>
 								<ul class="nav navbar-nav">
 									<li><a href="index.php"><span class="glyphicon glyphicon-home"></span>Home</a></li>
@@ -72,7 +72,7 @@ if (isset($_GET["st"])) {
 									<div class="panel panel-default">
 										<div class="panel-heading"></div>
 										<div class="panel-body">
-											<h1>Thankyou </h1>
+											<h1>Thank you </h1>
 											<hr/>
 											<p>Hello <?php echo "<b>".$_SESSION["name"]."</b>"; ?>,Your payment process is 
 											successfully completed and your Transaction id is <b><?php echo $trx_id; ?></b><br/>

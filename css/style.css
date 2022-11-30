@@ -58,7 +58,6 @@ Table OF Contents
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  /*background-image: linear-gradient(-134deg, #FFA62E 0%, #FB962E 20%, #F8852E 40%, #F3742D 60%, #EF612D 80%, #EA4D2C 100%);*/
     
 }
 
@@ -491,7 +490,8 @@ textarea.input {
 #header {
   padding-top: 15px;
   padding-bottom: 15px;
-  background-image:  linear-gradient(-135deg, #FF6CAB 0%, #F660BC 10%, #EC53CD 20%, #E045DE 30%, #D335EE 40%, #C323FF 50%, #B53AFF 60%, #A749FF 70%, #9854FF 80%, #865EFF 90%, #7366FF 100%);
+  /*background-image:  linear-gradient(-135deg, #FF6CAB 0%, #F660BC 10%, #EC53CD 20%, #E045DE 30%, #D335EE 40%, #C323FF 50%, #B53AFF 60%, #A749FF 70%, #9854FF 80%, #865EFF 90%, #7366FF 100%);*/
+  background: #8D99AE;
 }
 
 .header-logo {
@@ -855,54 +855,15 @@ background: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10
 	05 -> HOT DEAL
 ===========================================================*/
 
-/*#hot-deal.section {
-  padding: 60px 0px;
-  margin: 30px 0px;
-  background-color: #E4E7ED;
-  background-image: url('../img/hotdeal.png');
-  background-position: center;
-  background-repeat: no-repeat;
+#hot-deal{
+  padding: 120px 0px;
+  margin: 80px 0px;
+  text-align: center;
 }
 
 .hot-deal {
-  text-align: center;
-}
-
-.hot-deal .hot-deal-countdown {
-  margin-bottom: 30px;
-}
-
-.hot-deal .hot-deal-countdown>li {
-  position: relative;
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  background: #D10024e6;
-  text-align: center;
-  border-radius: 50%;
-  margin: 0px 5px;
-}
-
-.hot-deal .hot-deal-countdown>li>div {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.hot-deal .hot-deal-countdown>li>div h3 {
-  color: #FFF;
-  margin-bottom: 0px;
-}
-
-.hot-deal .hot-deal-countdown>li>div span {
-  display: block;
-  font-size: 10px;
-  text-transform: uppercase;
-  color: #FFF;
+  align-items: center;
+  
 }
 
 .hot-deal p {
@@ -912,7 +873,7 @@ background: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10
 
 .hot-deal .cta-btn {
   margin-top: 15px;
-}*/
+}
 
 /*=========================================================
 	06 -> PRODUCT
@@ -2022,7 +1983,8 @@ background: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10
 
 #newsletter input{
   height: 3.125rem;
-  padding: 0 1.2em;
+  /*padding: 0 1.2em;*/
+  padding: 25px;
   font-size: 14px;
   width: 100%;
   border: 1px solid transparent;
@@ -2040,7 +2002,12 @@ background: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border: none;
+  padding: 15px;
 }  
+
+#newsletter .follow li{
+  color: white;
+}
 
 
 /*=========================================================
@@ -2111,7 +2078,7 @@ background: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10
 	Arrows
 \*----------------------------*/
 
-/*.slick-prev, .slick-next {
+.slick-prev, .slick-next {
   width: 40px;
   height: 40px;
   border: 1px solid #E4E7ED;
@@ -2150,13 +2117,13 @@ background: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10
 
 .slick-next {
   right: -20px;
-}*/
+}
 
 /*----------------------------*\
 	Dots
 \*----------------------------*/
 
-/*.slick-dots li, .slick-dots li button, .slick-dots li button:before {
+.slick-dots li, .slick-dots li button, .slick-dots li button:before {
   width: 10px;
   height: 10px;
 }
@@ -2175,7 +2142,7 @@ background: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10
 .custom-dots .slick-dots {
   position: static;
   margin: 15px 0px;
-}*/
+}
 
 /*=========================================================
 	13 -> RESPONSIVE
@@ -2301,10 +2268,7 @@ background: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10
 .login-col{
     background-image: linear-gradient(-135deg, #FF6CAB 0%, #F660BC 10%, #EC53CD 20%, #E045DE 30%, #D335EE 40%, #C323FF 50%, #B53AFF 60%, #A749FF 70%, #9854FF 80%, #865EFF 90%, #7366FF 100%);
     padding-bottom: 5%;
-    
-    
-        
-    
+       
 }
 
 .login-pad{
@@ -2366,12 +2330,12 @@ background: linear-gradient(to bottom, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, 
 
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-/*{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Spartan', sans-serif;
-}*/
+}
 
 h1{
     font-size: 50px;
@@ -2422,18 +2386,18 @@ body{
     background-size: cover;
     background-position: top 25% right 0;
     padding: 0 80px;
-    /*display: flex;
+    display: flex;
     align-items: flex-start;
-    justify-content:;*/
+    justify-content: center;
     
 }
 
 h5{
-    /*text-align: center;*/
+    text-align: center;
     position: relative;
-    /*top: 50%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);*/
+    transform: translate(-50%, -50%);
 }
 
 #product1{

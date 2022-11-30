@@ -119,16 +119,12 @@ if(isset($_POST["getProduct"])){
                         <div class='col-md-4 col-xs-6' >
 								<a href='product.php?p=$pro_id'><div class='product'>
 									<div class='product-img'>
-										<img src='product_images/$pro_image' style='max-height: 170px;' alt=''>
-										<div class='product-label'>
-											<span class='sale'>-30%</span>
-											<span class='new'>NEW</span>
-										</div>
+										<img src='product_images/$pro_image' style='max-height: 250px;' alt=''>
 									</div></a>
 									<div class='product-body'>
 										<p class='product-category'>$cat_name</p>
 										<h3 class='product-name header-cart-item-name'><a href='product.php?p=$pro_id'>$pro_title</a></h3>
-										<h4 class='product-price header-cart-item-info'>$pro_price<del class='product-old-price'>$990.00</del></h4>
+										<h4 class='product-price header-cart-item-info'>R$pro_price</h4>
 										<div class='product-rating'>
 											<i class='fa fa-star'></i>
 											<i class='fa fa-star'></i>
@@ -185,16 +181,13 @@ if(isset($_POST["get_seleted_Category"]) || isset($_POST["selectBrand"]) || isse
                         <div class='col-md-4 col-xs-6'>
 								<a href='product.php?p=$pro_id'><div class='product'>
 									<div class='product-img'>
-										<img  src='product_images/$pro_image'  style='max-height: 170px;' alt=''>
-										<div class='product-label'>
-											<span class='sale'>-30%</span>
-											<span class='new'>NEW</span>
-										</div>
+										<img  src='product_images/$pro_image'  style='max-height: 250px;' alt=''>
+										
 									</div></a>
 									<div class='product-body'>
 										<p class='product-category'>$cat_name</p>
 										<h3 class='product-name header-cart-item-name'><a href='product.php?p=$pro_id'>$pro_title</a></h3>
-										<h4 class='product-price header-cart-item-info'>$pro_price<del class='product-old-price'>$990.00</del></h4>
+										<h4 class='product-price header-cart-item-info'>R$pro_price</h4>
 										<div class='product-rating'>
 											<i class='fa fa-star'></i>
 											<i class='fa fa-star'></i>
@@ -335,7 +328,7 @@ if (isset($_POST["Common"])) {
 												</div>
 												<div class="product-body">
 													<h3 class="product-name"><a href="#">'.$product_title.'</a></h3>
-													<h4 class="product-price"><span class="qty">'.$n.'</span>$'.$product_price.'</h4>
+													<h4 class="product-price"><span class="qty">'.$n.'</span>R'.$product_price.'</h4>
 												</div>
 												
 											</div>'
@@ -347,7 +340,7 @@ if (isset($_POST["Common"])) {
             
             echo '<div class="cart-summary">
 				    <small class="qty">'.$n.' Item(s) selected</small>
-				    <h5>$'.$total_price.'</h5>
+				    <h5>R'.$total_price.'</h5>
 				</div>'
             ?>
 				
@@ -362,7 +355,7 @@ if (isset($_POST["Common"])) {
     
     if (isset($_POST["checkOutDetails"])) {
 		if (mysqli_num_rows($query) > 0) {
-			//display user cart item with "Ready to checkout" button if user is not login
+			//display user cart item with "Ready to checkout" button if user is not login    <input type="hidden" name="currency_code" value="ZAR"/>
 			echo '<div class="main ">
 			<div class="table-responsive">
 			<form method="post" action="login_form.php">
@@ -401,7 +394,8 @@ if (isset($_POST["Common"])) {
 									</div>
 									<div class="col-sm-6">
 										<div style="max-width=50px;">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+										<p>The perfect 100% cotton crew neck t-shirt ideal for everyday wear.
+										Our garment fits vary from product to product and within the same brand. Please ensure that you check the size guide for each item before placing your order.</p>
 										</div>
 									</div>
 									
@@ -434,7 +428,7 @@ if (isset($_POST["Common"])) {
 					<tr>
 						<td><a href="store.php" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
 						<td colspan="2" class="hidden-xs"></td>
-						<td class="hidden-xs text-center"><b class="net_total" ></b></td>
+						<td class="hidden-xs text-center"><b class="net_total"></b></td>
 						<div id="issessionset"></div>
                         <td>
 							
@@ -454,7 +448,7 @@ if (isset($_POST["Common"])) {
 					
 						<form action="checkout.php" method="post">
 							<input type="hidden" name="cmd" value="_cart">
-							<input type="hidden" name="business" value="shoppingcart@puneeth.com">
+							<input type="hidden" name="business" value="shoppingcart@gmail.com">
 							<input type="hidden" name="upload" value="1">';
 							  
 							$x=0;
@@ -465,7 +459,7 @@ if (isset($_POST["Common"])) {
 								echo  	
 
 									'<input type="hidden" name="total_count" value="'.$x.'">
-									<input type="hidden" name="item_name_'.$x.'" value="'.$row["product_title"].'">
+									 <input type="hidden" name="item_name_'.$x.'" value="'.$row["product_title"].'">
 								  	 <input type="hidden" name="item_number_'.$x.'" value="'.$x.'">
 								     <input type="hidden" name="amount_'.$x.'" value="'.$row["product_price"].'">
 								     <input type="hidden" name="quantity_'.$x.'" value="'.$row["qty"].'">';
@@ -475,7 +469,7 @@ if (isset($_POST["Common"])) {
 								'<input type="hidden" name="return" value="http://localhost/myfiles/public_html/payment_success.php"/>
 					                <input type="hidden" name="notify_url" value="http://localhost/myfiles/public_html/payment_success.php">
 									<input type="hidden" name="cancel_return" value="http://localhost/myfiles/public_html/cancel.php"/>
-									<input type="hidden" name="currency_code" value="USD"/>
+									<input type="hidden" name="South African Rand" value="ZAR"/>
 									<input type="hidden" name="custom" value="'.$_SESSION["uid"].'"/>
 									<input type="submit" id="submit" name="login_user_with_product" name="submit" class="btn btn-success" value="Ready to Checkout">
 									</form></td>
@@ -493,7 +487,7 @@ if (isset($_POST["Common"])) {
 	
 }
 
-//Remove Item From cart
+//Remove Item From cart 
 if (isset($_POST["removeItemFromCart"])) {
 	$remove_id = $_POST["rid"];
 	if (isset($_SESSION["uid"])) {
@@ -503,9 +497,9 @@ if (isset($_POST["removeItemFromCart"])) {
 	}
 	if(mysqli_query($con,$sql)){
 		echo "<div class='alert alert-danger'>
-						<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-						<b>Product is removed from cart</b>
-				</div>";
+		    <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+			<b>Product is removed from cart</b>
+			</div>";
 		exit();
 	}
 }

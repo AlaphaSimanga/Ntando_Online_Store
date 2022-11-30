@@ -128,9 +128,7 @@ span.price {
 						<label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
 						<input type="text" id="adr" name="address" class="form-control" value="'.$row["address1"].'" required>
 						<label for="city"><i class="fa fa-institution"></i> City</label>
-						<input type="text" id="city" name="city" class="form-control" value="'.$row["address2"].'" pattern="^[a-zA-Z ]+$" required>
-
-						
+						<input type="text" id="city" name="city" class="form-control" value="'.$row["address2"].'" pattern="^[a-zA-Z ]+$" required>	
 					</div>
 					
 					
@@ -190,7 +188,7 @@ span.price {
 					}
 					
 				echo'	
-				<input type="hidden" name="total_count" value="'.$total_count.'">
+				    <input type="hidden" name="total_count" value="'.$total_count.'">
 					<input type="hidden" name="total_price" value="'.$total.'">
 					
 					<input type="submit" id="submit" value="Continue to checkout" class="checkout-btn">
@@ -226,8 +224,8 @@ span.price {
 					<thead><tr>
 					<th >no</th>
 					<th >product title</th>
-					<th >	qty	</th>
-					<th >	amount</th></tr>
+					<th > qty </th>
+					<th > amount </th></tr>
 					</thead>
 					<tbody>
 					";
@@ -259,7 +257,7 @@ span.price {
 				</table>
 				<hr>
 				
-				<h3>total<span class='price' style='color:black'><b>$$total</b></span></h3>";
+				<h3>total<span class='price' style='color:black'><b>R$total</b></span></h3>";
 					
 				}
 				?>

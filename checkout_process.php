@@ -7,11 +7,6 @@ if (isset($_SESSION["uid"])) {
 	$email = $_POST['email'];
 	$address = $_POST['address'];
     $city = $_POST['city'];
-    /*$state = $_POST['state'];
-    $zip= $_POST['zip'];
-    '$state', '$zip',
-     `state`, `zip`,
-    */
     $cardname= $_POST['cardname'];
     $cardnumber= $_POST['cardNumber'];
     $expdate= $_POST['expdate'];
